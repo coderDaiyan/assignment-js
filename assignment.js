@@ -9,7 +9,6 @@ function kilometerToMeter(kilometer) {
 }
 
 
-
 // Budget Calculator
 function budgetCalculator(watch, phone, laptop) {
     var watchPrice = 50;
@@ -20,7 +19,6 @@ function budgetCalculator(watch, phone, laptop) {
     }
     return watchPrice * watch + phonePrice * phone + laptopPrice * laptop;
 }
-
 
 
 // Hotel Cost
@@ -47,6 +45,7 @@ function hotelCost(day) {
     }
     return price;
 }
+
 
 // Mega Friend
 function megaFriend(array) {
