@@ -59,5 +59,5 @@ function megaFriend(array) {
             return "Error: This value is not valid. Try again.";
         }   
     }
-    return longer
+    return longer;
 }
