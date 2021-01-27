@@ -56,7 +56,10 @@ function megaFriend(array) {
         }
         if (array <= 0) {
             return "Error: This value is not valid. Try again.";
-        }   
+        }
+        else if (array === [""]){
+            return "Error: This value is not valid. Try again.";
+        }
     }
     return longer;
 }
