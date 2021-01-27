@@ -24,24 +24,12 @@ function budgetCalculator(watch, phone, laptop) {
 // Hotel Cost
 function hotelCost(day) {
     var price = 0;
-    if (day <= 10) {
-        price = day * 100;
-    }
-    else if (day <= 20) {
-        var firstSec = 10 * 100;
-        var remaining = day - 10;
-        var secondSec = remaining * 80;
-        price = firstSec + secondSec;
-    }
-    else {
-        firstSec = 10 * 100;
-        secondSec = 20 * 80;
-        remaining = day - 20;
-        var thirdSec = remaining * 50;
-        price = firstSec + secondSec + thirdSec;
-    }
-    if (day <= 0) {
-        return "Error: This value is not valid. Try again.";
+    if (day <= 10){
+        price = 10 * 100
+    } else if (day <= 20){
+        price = 10 * 100 + (day - 10) * 80
+    } else {
+        price = 10 * 100 + 10 * 80 + (day - 20) * 50
     }
     return price;
 }
@@ -61,3 +49,27 @@ function megaFriend(array) {
     }
     return longer;
 }
+
+
+
+// var price = 0;
+// if (day <= 10) {
+//     price = day * 100;
+// }
+// else if (day <= 20) {
+//     var firstSec = 10 * 100;
+//     var remaining = day - 10;
+//     var secondSec = remaining * 80;
+//     price = firstSec + secondSec;
+// }
+// else {
+//     firstSec = 10 * 100;
+//     secondSec = 20 * 80;
+//     remaining = day - 20;
+//     var thirdSec = remaining * 50;
+//     price = firstSec + secondSec + thirdSec;
+// }
+// if (day <= 0) {
+//     return "Error: This value is not valid. Try again.";
+// }
+// return price;
