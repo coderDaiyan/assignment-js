@@ -51,8 +51,7 @@ function hotelCost(day) {
 function megaFriend(array) {
     var longer = array[0];
     for (var i = 0; i < array.length; i++) {
-        var element = array[i];
-        if (element > longer && array[i].length > longer.length) {
+        if (array[i].length > longer.length) {
             longer = array[i];
         }
         if (array <= 0) {
