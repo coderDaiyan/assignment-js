@@ -53,11 +53,9 @@ function megaFriend(array) {
     for (var i = 0; i < array.length; i++) {
         if (array[i].length > longer.length) {
             longer = array[i];
-        }
-        if (array <= 0) {
+        } else if (array <= 0) {
             return "Error: This value is not valid. Try again.";
-        }
-        else if (array === [""]){
+        } else if (array === [""]) {
             return "Error: This value is not valid. Try again.";
         }
     }
